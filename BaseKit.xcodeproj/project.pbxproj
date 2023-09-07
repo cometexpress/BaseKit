@@ -11,6 +11,14 @@
 		C017FBAB2AA9D353007BCFB1 /* BaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C017FBA02AA9D352007BCFB1 /* BaseKit.framework */; };
 		C017FBB02AA9D353007BCFB1 /* BaseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBAF2AA9D353007BCFB1 /* BaseKitTests.swift */; };
 		C017FBB12AA9D353007BCFB1 /* BaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C017FBA32AA9D352007BCFB1 /* BaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C017FBBC2AA9D4FD007BCFB1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBBB2AA9D4FD007BCFB1 /* UIViewController+Extension.swift */; };
+		C017FBBF2AA9D520007BCFB1 /* ConfigurableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBBE2AA9D520007BCFB1 /* ConfigurableViewProtocol.swift */; };
+		C017FBC12AA9D53C007BCFB1 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBC02AA9D53C007BCFB1 /* ReusableViewProtocol.swift */; };
+		C017FBC32AA9D623007BCFB1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBC22AA9D623007BCFB1 /* BaseViewController.swift */; };
+		C017FBC52AA9D638007BCFB1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBC42AA9D638007BCFB1 /* BaseView.swift */; };
+		C017FBC72AA9D6BF007BCFB1 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBC62AA9D6BF007BCFB1 /* BaseCollectionViewCell.swift */; };
+		C017FBC92AA9D950007BCFB1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBC82AA9D950007BCFB1 /* String+Extension.swift */; };
+		C017FBCB2AA9DC13007BCFB1 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017FBCA2AA9DC13007BCFB1 /* UICollectionViewFlowLayout+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		C017FBA42AA9D352007BCFB1 /* BaseKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BaseKit.docc; sourceTree = "<group>"; };
 		C017FBAA2AA9D353007BCFB1 /* BaseKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C017FBAF2AA9D353007BCFB1 /* BaseKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKitTests.swift; sourceTree = "<group>"; };
+		C017FBBB2AA9D4FD007BCFB1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C017FBBE2AA9D520007BCFB1 /* ConfigurableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableViewProtocol.swift; sourceTree = "<group>"; };
+		C017FBC02AA9D53C007BCFB1 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		C017FBC22AA9D623007BCFB1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C017FBC42AA9D638007BCFB1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C017FBC62AA9D6BF007BCFB1 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		C017FBC82AA9D950007BCFB1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C017FBCA2AA9DC13007BCFB1 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +87,13 @@
 		C017FBA22AA9D352007BCFB1 /* BaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				C017FBBD2AA9D50E007BCFB1 /* Protocol */,
+				C017FBBA2AA9D4D6007BCFB1 /* Extension */,
 				C017FBA32AA9D352007BCFB1 /* BaseKit.h */,
 				C017FBA42AA9D352007BCFB1 /* BaseKit.docc */,
+				C017FBC22AA9D623007BCFB1 /* BaseViewController.swift */,
+				C017FBC42AA9D638007BCFB1 /* BaseView.swift */,
+				C017FBC62AA9D6BF007BCFB1 /* BaseCollectionViewCell.swift */,
 			);
 			path = BaseKit;
 			sourceTree = "<group>";
@@ -83,6 +104,25 @@
 				C017FBAF2AA9D353007BCFB1 /* BaseKitTests.swift */,
 			);
 			path = BaseKitTests;
+			sourceTree = "<group>";
+		};
+		C017FBBA2AA9D4D6007BCFB1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C017FBBB2AA9D4FD007BCFB1 /* UIViewController+Extension.swift */,
+				C017FBC82AA9D950007BCFB1 /* String+Extension.swift */,
+				C017FBCA2AA9DC13007BCFB1 /* UICollectionViewFlowLayout+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C017FBBD2AA9D50E007BCFB1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C017FBBE2AA9D520007BCFB1 /* ConfigurableViewProtocol.swift */,
+				C017FBC02AA9D53C007BCFB1 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C017FBC92AA9D950007BCFB1 /* String+Extension.swift in Sources */,
+				C017FBCB2AA9DC13007BCFB1 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
+				C017FBC32AA9D623007BCFB1 /* BaseViewController.swift in Sources */,
+				C017FBC72AA9D6BF007BCFB1 /* BaseCollectionViewCell.swift in Sources */,
+				C017FBBC2AA9D4FD007BCFB1 /* UIViewController+Extension.swift in Sources */,
+				C017FBC12AA9D53C007BCFB1 /* ReusableViewProtocol.swift in Sources */,
+				C017FBC52AA9D638007BCFB1 /* BaseView.swift in Sources */,
+				C017FBBF2AA9D520007BCFB1 /* ConfigurableViewProtocol.swift in Sources */,
 				C017FBA52AA9D352007BCFB1 /* BaseKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +450,7 @@
 		C017FBB82AA9D353007BCFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SV3K237PCX;
@@ -418,6 +467,7 @@
 		C017FBB92AA9D353007BCFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SV3K237PCX;
