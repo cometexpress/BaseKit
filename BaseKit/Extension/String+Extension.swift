@@ -9,11 +9,11 @@ import Foundation
 
 extension String {
     
-    func localized(comment: String = "") -> String {
-        return NSLocalizedString(self, comment: comment)
+    public var localized: String {
+        return NSLocalizedString(self, comment: "")
     }
     
-    func localized(with arguments: [CVarArg] = [], comment: String = "") -> String {
-        return String(format: self.localized(comment: comment), arguments: arguments)
+    public func localized(with arguments: [CVarArg] = []) -> String {
+        return String(format: self.localized, arguments: arguments)
     }
 }

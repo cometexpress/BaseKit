@@ -12,12 +12,12 @@ open class BaseViewController<T: BaseView>: UIViewController {
     // deinit 실행 여부 설정
     open var isShowDeinit: Bool { false }
     
-    open var mainView: T {
+    public var mainView: T {
         return view as! T
     }
     
     override public func loadView() {
-        view = mainView
+        view = T.init()
     }
 
     open override func viewDidLoad() {

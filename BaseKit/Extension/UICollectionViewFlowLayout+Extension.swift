@@ -9,7 +9,7 @@ import UIKit
 
 extension UICollectionViewFlowLayout {
     
-    func collectionViewLayout(
+    public func collectionViewLayout(
         itemSize: CGSize,
         sectionInset: UIEdgeInsets,
         minimumLineSpacing: CGFloat,
