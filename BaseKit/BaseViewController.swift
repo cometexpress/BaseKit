@@ -23,12 +23,9 @@ open class BaseViewController<T: BaseView>: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        setConstraints()
     }
     
     open func configureView() { }
-    
-    open func setConstraints() { }
     
     deinit {
         if isShowDeinit {

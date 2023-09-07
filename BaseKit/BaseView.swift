@@ -12,8 +12,11 @@ open class BaseView: UIView {
     // deinit 실행 여부 설정
     open var isShowDeinit: Bool { false }
     
+    open var viewBg: UIColor { .clear }
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = viewBg
         configureView()
         setConstraints()
     }
@@ -22,8 +25,8 @@ open class BaseView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    open func configureView() {}
-    open func setConstraints() {}
+    open func configureView() { }
+    open func setConstraints() { }
     
     deinit {
         if isShowDeinit {
