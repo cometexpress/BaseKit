@@ -6,8 +6,23 @@
 	<dict>
 		<key>BaseKit.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C017FB9F2AA9D352007BCFB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C017FBA92AA9D353007BCFB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
