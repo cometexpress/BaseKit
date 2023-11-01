@@ -28,3 +28,4 @@ extension UITableViewCell: ReusableViewProtocol {
         return String(describing: self)
     }
 }
+
